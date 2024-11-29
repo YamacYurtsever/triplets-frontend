@@ -5,7 +5,11 @@ export default {
     './src/**/*.{html,js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'auth-bg': "url('/src/assets/triplets_castle.png')",
+      },
+    },
   },
   plugins: [],
 };
