@@ -1,0 +1,19 @@
+.auth-page {
+    @apply 
+        min-h-screen 
+        bg-castle bg-cover bg-center 
+        flex items-center justify-center;
+}
+
+.auth-card {
+    @apply 
+        h-auth-card-h w-auth-card-w p-5 bg-white 
+        flex flex-col
+        border border-neutral-light rounded-3xl 
+        shadow-2xl shadow-neutral-default;
+}
+
+.auth-header {
+    @apply 
+        text-5xl text-center font-bold tracking-wider text-neutral-default;
+}
