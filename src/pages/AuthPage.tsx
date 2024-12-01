@@ -1,22 +1,22 @@
-import { useState, useEffect } from 'react';
-import { requestMessage } from '../api/authApi';
+import AuthForm from '../components/AuthForm';
+import '../styles/AuthPage.css';
 
 const AuthPage = () => {
-  const [message, setMessage] = useState("No message yet");
-
-  useEffect(() => {
-    fetchMessage()
-  }, []);
-  
-  const fetchMessage = async () => {
-    const data = await requestMessage();
-    const message = data.message;
-    setMessage(message);
-  }
-
   return (
-    <h1 className='text-4xl text-emerald-700'>Message: {message}</h1>
+    <div className='auth-page'>
+      <AuthCard/>
+    </div>
   );
 }
+
+const AuthCard = () => {
+
+  return (
+    <div className='auth-card'>
+      <h1 className='auth-header'>TRIPLETS</h1>
+      <AuthForm/>
+    </div>
+  );
+};
 
 export default AuthPage;
