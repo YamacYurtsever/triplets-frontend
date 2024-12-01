@@ -1,0 +1,37 @@
+.auth-form {
+    @apply p-5 flex flex-col flex-grow justify-evenly items-center;
+}
+
+.auth-toggle-label {
+    @apply flex justify-center items-center cursor-pointer;
+}
+
+.auth-toggle-container {
+    @apply 
+        w-36 p-2 relative bg-primary-default text-white
+        flex items-center justify-between 
+        border border-neutral-default rounded-lg  
+        peer-checked:bg-secondary-default peer-checked:after:translate-x-full;
+}
+
+.auth-toggle-container::after {
+    @apply 
+        h-full w-1/2 absolute left-0 bg-white/25 
+        rounded-lg transition-all content-[''];
+}
+
+.auth-inputs {
+    @apply flex flex-col flex-grow justify-evenly items-center;
+}
+
+.auth-input {
+    @apply 
+        w-72 p-2 placeholder:text-white placeholder:capitalize
+        border border-neutral-default rounded-lg;
+}
+
+.auth-button {
+    @apply 
+        w-32 p-2 text-white
+        border border-neutral-default rounded-lg;
+}
