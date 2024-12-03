@@ -8,7 +8,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/auth" replace />}/>
         <Route path="/auth" element={<AuthPage/>}/>
+        <Route path="/settings"/>
+        <Route path="/calendar"/>
+        <Route path="/tasks"/>
         <Route path="/dashboard"/>
+        <Route path="/interests"/>
+        <Route path="/goals"/>
+        <Route path="/achievements"/>
       </Routes>
     </BrowserRouter>
   );
